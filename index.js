@@ -1,5 +1,6 @@
 'use stirct'
 
+var opbeat = require('opbeat').start()
 var uuid = require('node-uuid')
 var AWS = require('aws-sdk')
 var Printer = require('ipp-printer')
@@ -25,7 +26,7 @@ printer.on('job', function (job) {
   }
 
   s3.upload(params, function (err, data) {
-    if (err) throw err
+    if (err) return opbeat.captureError(err)
     console.log('done uploading job %d (key: %s)', job.id, key)
   })
 })

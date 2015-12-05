@@ -21,6 +21,8 @@ printer.on('job', function (job) {
 
   var params = {
     Bucket: 'watson-printbin',
+    ACL: 'public-read',
+    ContentType: 'application/postscript',
     Key: key,
     Body: job
   }

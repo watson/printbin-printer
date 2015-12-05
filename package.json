@@ -1,0 +1,26 @@
+{
+  "name": "printbin-printer",
+  "version": "1.0.0",
+  "description": "The IPP printer behind printbin",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.2.21",
+    "node-uuid": "^1.4.7"
+  },
+  "devDependencies": {
+    "standard": "^5.4.1"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watson/printbin-printer.git"
+  },
+  "author": "Thomas Watson Steen <w@tson.dk> (https://twitter.com/wa7son)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watson/printbin-printer/issues"
+  },
+  "homepage": "https://github.com/watson/printbin-printer#readme"
+}

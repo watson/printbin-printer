@@ -5,7 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "aws-sdk": "^2.2.21",
-    "node-uuid": "^1.4.7"
+    "ipp-printer": "^0.10.4",
+    "node-uuid": "^1.4.7",
+    "opbeat": "^3.1.3"
   },
   "devDependencies": {
     "standard": "^5.4.1"

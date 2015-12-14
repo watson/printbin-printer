@@ -23,6 +23,7 @@ printer.on('job', function (job) {
     Bucket: 'watson-printbin',
     ACL: 'public-read',
     ContentType: 'application/postscript',
+    StorageClass: 'REDUCED_REDUNDANCY',
     Key: key,
     Body: job
   }

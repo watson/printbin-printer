@@ -24,6 +24,7 @@ printer.on('job', function (job) {
     ACL: 'public-read',
     ContentType: 'application/postscript',
     StorageClass: 'REDUCED_REDUNDANCY',
+    Metadata: { name: job.name },
     Key: key,
     Body: job
   }

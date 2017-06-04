@@ -20,7 +20,7 @@ printer.on('job', function (job) {
   })
 
   var params = {
-    Bucket: 'watson-printbin',
+    Bucket: process.env.AWS_S3_BUCKET || 'printbin',
     ACL: 'public-read',
     ContentType: 'application/postscript',
     StorageClass: 'REDUCED_REDUNDANCY',

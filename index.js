@@ -1,4 +1,4 @@
-'use stirct'
+'use strict'
 
 var opbeat = require('opbeat').start()
 var uuid = require('node-uuid')
